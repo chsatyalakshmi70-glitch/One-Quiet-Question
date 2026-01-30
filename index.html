@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>One Quiet Question</title>
+</head>
+
+<body style="background:#f4f1ec; font-family:Arial; text-align:center; padding-top:100px;">
+
+  <h2>One Quiet Question</h2>
+
+  <p id="question" style="font-size:20px;"></p>
+
+  <script>
+    var questions = [
+      "What made you smile today?",
+      "What are you grateful for right now?",
+      "What is something you want to improve?",
+      "What is one good thing about today?",
+      "What do you need to rest from?"
+    ];
+
+    var today = new Date().getDate();
+    var index = today % questions.length;
+
+    document.getElementById("question").innerHTML = questions[index];
+  </script>
+
+</body>
+</html>
